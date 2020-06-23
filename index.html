@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<!--
+	Story by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>RastreioBot</title>
+		<meta property="og:title" content="RastreioBot">
+		<meta property="og:locale" content="pt_BR">
+		<meta name="description" content="https://telegram.me/RastreioBot">
+		<meta property="og:description" content="https://telegram.me/RastreioBot">
+		<link rel="canonical" href="https://rastreiobot.xyz/">
+		<meta property="og:url" content="https://rastreiobot.xyz/">
+		<meta property="og:site_name" content="RastreioBot">
+		<meta name="twitter:card" content="summary">
+		<meta property="twitter:image" content="images/rastreiobot.png">
+		<meta property="twitter:title" content="RastreioBot">
+		<meta name="twitter:site" content="@gabrf">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+			<div id="wrapper" class="divided">
+				<!--<section class="banner style3 content-align-center image-position-left fullscreen onload-image-fade-in onload-content-fade-right orient-left">-->
+					<section class="banner onload-image-fade-in onload-content-fade-right style3 fullscreen orient-right content-align-left image-position-center">
+						<div class="content">
+							<h2>RastreioBot</h2>
+							<form method="get" action="https://telegram.me/rastreiobot">
+								<div class="content">
+									<p>Cadastre seu código de rastreio para receber alertas no seu celular!</p>
+								</div>
+								<div class="fields">
+									<div class="field half content-align-center">
+										<h4 for="codigo">Código de Rastreio:</h4>
+									</div>
+									<div class="field half style1 content-align-center">
+										<input type="text" name="start" id="start" />
+									</div>
+								</div>
+								<ul class="actions special">
+									<li><input type="submit" name="submit" id="submit" value="Cadastrar" /></li>
+								</ul>
+							</form>
+
+						</div>
+						<div class="image">
+							<img src="images/rastreiobot.png" alt="">
+						</div>
+					</section>
+                                        <section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="aboutme">
+                                                <div class="content">
+                                                        <h2>Instruções</h2>
+							<p>Digite o código a ser rastreado e clique em "Cadastrar". Em seguida, basta clicar em "Iniciar" e o cadastro estará feito. Você será notificado sempre que houver uma atualização.</p>
+							<p>Para abrir a página com o código já preenchido, basta compartilhar a url seguindo o exemplo:</p>
+							<h4>https://rastreiobot.xyz?codigo=AB123456789CD</h4>
+                                                </div>
+                                        </section>
+					<footer class="wrapper style1 align-center">
+
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="https://gabrf.com" class="icon style2 solid fa-home"><span class="label">Website</span></a></li>
+								<li><a href="https://t.me/GabrielRF" class="icon style2 fa-paper-plane"><span class="label">Telegram</span></a></li>
+								<li><a href="https://github.com/GabrielRF" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="https://twitter.com/GabRF" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="https://www.linkedin.com/in/gabrielrochaferreira" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							</ul>
+							<p>© Gabriel R F. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+						</div>
+					
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+	                <script>
+                            window.addEventListener('DOMContentLoaded',function(){
+                                const url_query = new URLSearchParams(window.location.search);
+                                if (url_query.has("codigo")) {
+                                    document.getElementById("start").value = url_query.get("codigo");
+                                }
+                            });
+                        </script>
+
+	</body>
+</html>
